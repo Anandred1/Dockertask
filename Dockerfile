@@ -1,5 +1,5 @@
-FROM ubuntu
-LABEL task anand
-COPY . /var/www/html
-CMD ['/usr/sbin/apachetl", "-D", "FOREGROUND"]
+FROM httpd
+LABEL task2 anand
+COPY . /usr/local/apache2/htdocs
+
 
